@@ -1,0 +1,35 @@
+@import "../../global";
+
+  
+     
+    .logo{
+        width:10rem;
+        height: 3rem;
+    }
+    .header-menu{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap:2rem;
+        color:white;
+        li:hover{
+            cursor: pointer;
+          color:$orange;
+        }
+    }
+    
+
+.header-visible{
+display: flex;
+justify-content: space-between;
+}
+
+@media screen and (max-width:768px){
+    .header{
+        width: 100%;
+       
+    }
+    .header-menu{
+        display:none;
+    }
+}
