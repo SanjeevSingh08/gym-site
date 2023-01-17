@@ -45,3 +45,10 @@
     filter: blur(150px);
    
 }
+@media  screen and (max-width:768px) {
+    .footer{
+        gap: 2rem;
+        height: fit-content;
+        padding-top: 3rem;
+    }
+}

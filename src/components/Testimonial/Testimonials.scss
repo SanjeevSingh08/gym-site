@@ -7,6 +7,7 @@
     margin-bottom: 50px;
 
 }
+
 .left-t{
     display: flex;
     flex:1 1;
@@ -147,6 +148,41 @@ left: 22%;
      left: 15%;
      right: 15%;
     }
+}
+
+@media screen and (min-width:768px )  and(max-width:1170px){
+
+    .right-t>:nth-child(1){
+        position: absolute;
+        
+        height: 80%;
+         right: 17%;
+          }
+          .right-t>:nth-child(2){
+        
+       
+            
+         right: 13%;
+        height: 75%;
+          }
+          .right-t>:nth-child(3){
+          
+            height: 80%;
+         right: 15%;
+        }
+
+        .left-t{
+gap: 1rem;
+        }
+        .arrows{
+           
+            bottom: -1rem;
+            width: 18%;
+            left: 40%;
+            right: 40%;
+            justify-content:space-around;
+          }
+       
 }
 
 
