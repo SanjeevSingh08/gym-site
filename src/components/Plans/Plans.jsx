@@ -4,6 +4,7 @@ import {plansData} from "../../data/plansData"
 import whiteTick from "../../assets/whiteTick.png"
 
 const Plans = () => {
+
   return (
    <div className="plans-container">
     <div className="blur plans-blur-1"></div>
@@ -14,19 +15,19 @@ const Plans = () => {
         <span className='stroke-text'>NOW WITH US</span>
     </div>
     {/*plans card*/ }
-
-    <div className="plans h" >
+    
+    <div className="plans h"  >
 {plansData.map((plan,i)=>(
-    <div className="plan" key={i}>
+    <div className="plan" key={plan.price}>
         {plan.icon}
         <span>{plan.name}</span>
         <span>$ {plan.price}</span>
 
         <div className="features"  >
-            {plan.features.map((feature,i)=>(
-                <div className="feature">
+            {plan.features.map((feature,j)=>(
+                <div className="feature" key={j}>
                     <img src={whiteTick} alt="" />
-                    <span key={i}>{feature}</span>
+                    <span key={j}>{feature}</span>
                 </div>
             )
             )}
