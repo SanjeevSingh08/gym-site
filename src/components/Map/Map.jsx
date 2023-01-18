@@ -17,3 +17,4 @@ const Map = () => {
        </>
   )
 }
+export default Maps
