@@ -11,7 +11,7 @@ export const plansData = [
       </svg>
     ),
     name: "BASIC PLAN",
-    price: "25",
+    price: "1800",
     features: [
       "2 hours of excercises",
       "Free consultaion to coaches",

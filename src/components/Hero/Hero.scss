@@ -12,7 +12,7 @@
   flex-direction: column;
 
   .the-best-ad {
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     background-color: #363d42;
     border-radius: 4rem;
     width: fit-content;
@@ -44,9 +44,9 @@ z-index: 1;
 .hero-text{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     text-transform: uppercase;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: bold;
     color:white;
     text-overflow: inherit;
@@ -56,7 +56,7 @@ font-size: 1rem;
 font-weight: 200;
 text-transform: none;
 letter-spacing: 1px;
-width: 80%;
+width: 64%;
     }
   
 
@@ -201,6 +201,7 @@ div{
       width: 2rem;
     }
   }
+ 
   .span-text{
     width: 60%;
   }
@@ -215,6 +216,40 @@ div{
     width: 12rem;
   }
 }
+@media screen and (min-width:768px )  and(max-width:880px){
+  .calories{
+    left: -9rem;
+    top: 36rem;
+    font-size: .7rem;
+    gap:1rem;
+    }
+.calories div > span:nth-of-type(2){
+  font-size: 1rem;
+}
+.heart-rate{
+  left: -1rem;
+  right: 0;
+  top:11rem;
+  width: 11vw;
+  font-size: .9rem;
+  gap: .5rem;
+  span:nth-of-type(2) {
+  
+    font-size: .8rem;
+}
+}
+.hero-text{
+  font-size: 3rem;
+}
+.hero-image{
+  width: 18rem;
+}
+.right-h>.btn{
+  right: 1rem;
+  left: -1rem;
+}
+  }
+
 @media screen and (max-width:768px){
   .hero{
     flex-direction: column;
@@ -352,13 +387,13 @@ display: none;
   }
 
 }
-@media screen and (min-width:768px )  and(max-width:1170px){
-.calories{
-left: 1rem;
-top: 35rem;
-font-size: .7rem;
-gap:1rem;
-}
+@media screen and (min-width:880px )  and(max-width:1170px){
+  .calories{
+    left: 1rem;
+    top: 34rem;
+    font-size: .7rem;
+    gap:1rem;
+    }
 .calories div > span:nth-of-type(2){
   font-size: 1rem;
 }

@@ -20,11 +20,11 @@ const Hero = () => {
         {/*the best add*/}
         <div className="the-best-ad">
           <motion.div
-            initial={{ left:mobile?"178px":"238px" }}
+            initial={{ left:mobile?"164px":"220px" }}
             whileInView={{ left: "8px" }}
             transition={{ ...transition, type: "tween" }}
           ></motion.div>
-          <span>The best fitness club in the town</span>
+          <span>The best fitness gym in Howrah</span>
         </div>
         {/*Hero Heading*/}
         <div className="hero-text">
@@ -37,8 +37,7 @@ const Hero = () => {
           </div>
           <div className="span-text">
             <span>
-              In here we will help you to shape and build your ideal body and
-              live up your life to fullest
+            Achieve your fitness goals at the best gym in <strong>Howrah</strong>. Top equipment and certified trainers. Join now and unleash your full potential.
             </span>
           </div>
         </div>

@@ -3,20 +3,30 @@
   
      
     .logo{
-        width:clamp(4rem,10vw,8rem);
-     
+        width:clamp(4rem,9vw,7rem);
+     margin-left: 2vw;
         filter: none;
     
     }
     .header-menu{
+        font-size: 1.1rem;
         list-style: none;
         display: flex;
         align-items: center;
+        margin-right: 5vw;
         gap:2rem;
+        
         color:white;
+        >li{
+            padding: 7px;
+        }
         li:hover{
             cursor: pointer;
-          color:$orange;
+          color:white;
+          background:linear-gradient(210.41deg, #0e406c  1.14%, #188fb3 100.75%);
+          border-radius:5px;
+          box-shadow: 2px 3px rgb(30, 79, 147);
+
         }
     }
     

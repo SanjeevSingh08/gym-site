@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import logo from '../../assets/logo.png'
+
 const Header = () => {
   return (
  <div className="header header-visible">

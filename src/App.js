@@ -15,7 +15,7 @@ function App() {
  <Hero/>
  <Programs/>
  <Reasons/>
- <Plans/>
+ 
  <Testimonials/>
  <Join/>
  <Map/>

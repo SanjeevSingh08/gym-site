@@ -23,13 +23,14 @@
         width: 2rem;
         height: 2rem;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 2vw;
     }
 
 }
 .logo-f>img{
  width: clamp(4rem,10vw,8rem);
     filter: none;
+    margin-bottom:3vw
 
 }
 .blur-f-1{
