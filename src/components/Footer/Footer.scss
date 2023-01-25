@@ -12,21 +12,24 @@
     gap: 4rem;
     justify-content: center;
     align-items: center;
-    height: 15rem;
+  
 
 }
 .social-links{
+    margin-top:2vw;
     display: flex;
     gap: 4rem;
     >img{
         width: 2rem;
         height: 2rem;
         cursor: pointer;
+        margin-bottom: 20px;
     }
 
 }
 .logo-f>img{
-    width: 10rem;
+ width: clamp(4rem,10vw,8rem);
+    filter: none;
 
 }
 .blur-f-1{

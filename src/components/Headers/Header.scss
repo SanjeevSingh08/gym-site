@@ -3,8 +3,8 @@
   
      
     .logo{
-        width:7rem;
-        height: 6rem;
+        width:clamp(4rem,10vw,8rem);
+     
         filter: none;
     
     }
