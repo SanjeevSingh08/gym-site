@@ -100,7 +100,7 @@ width: 80%;
   flex: 1;
   flex-direction: row;
   position: relative;
-  background-color: $orange;
+  background: $planCard ;
   >.btn{
     position: absolute;
     right:3rem;
@@ -138,6 +138,7 @@ color:$gray;
     top:10rem;
     right:8rem;
     width: 23rem;
+    filter: none;
   }
 
 .hero-image-back{
