@@ -1,85 +1,128 @@
 @import "../../global";
-
+.testi-section{
+    margin-bottom: 4vw;
+}
 .Testimonials{
     display: flex;
-    gap:1rem;
-    padding : 0 2rem;
+    gap: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8vw 1rem;
     margin-bottom: 50px;
-
+    margin-top: 3vw;
+    background: #000000;
+    border-radius: 15px;
+    box-shadow: 8px 5px 20px -6px rgba(7,87,255,0.75);
+    -webkit-box-shadow: 8px 7px 27px -6px rgba(7,87,255,0.75);
+    -moz-box-shadow: 8px 5px 39px 20px rgba(7,87,255,0.75);
+    
 }
 
 .left-t{
     display: flex;
-    flex:1 1;
-    gap:2rem;
+    flex:1.4 1;
+   
     flex-direction: column;
     text-transform: uppercase;
     color: white;
+    background-color: #2a3241;
+    padding: 2vw 2vw;
+    border:2px white solid;
+    box-shadow: 8px 5px 20px -6px rgba(7,87,255,0.75);
+    -webkit-box-shadow: 8px 5px 20px -6px rgba(7,87,255,0.75);
+    -moz-box-shadow: 8px 5px 39px 20px rgba(7,87,255,0.75);
+    
 
 }
-.left-t>:nth-child(1){
-    color: $orange;
+.testi-text{
+    color: white;
     font-weight: bold;
+    font-size: clamp(2.5rem,5vw,6rem);
+
+    
 
 }
-.left-t>:nth-child(2),.left-t>:nth-child(3){
+.left-t>:nth-child(0),.left-t>:nth-child(1){
 
     font-weight: bold;
-    font-size: 3rem;
+    font-size: clamp(1rem,3vw,4.5rem);
+    margin-top: 1vw;
+    border-radius: 5px;
+    background: radial-gradient(#2e4182, transparent);
+    padding: .5vw .5vw;
 } 
 .name{
+    font-family:cursive;
     color: $orange;
 }  
-.left-t>:nth-child(4){
+.left-t>:nth-child(2){
     text-transform: none;
     text-align: justify;
-    letter-spacing: 2px;
-    line-height: 40px;
+   
+font-size: clamp(.9rem,2vw,1.5rem);
+  margin-top: 1.2vw;
+  font-family:cursive;
+
 
 }
+.detail{
+    margin-top: 1.5vw;
+    font-size: clamp(1rem,2vw,1.7rem); 
+    text-transform: none;
+    font-family:cursive;
+}
+
 
 .right-t{
     display: flex;
     flex:1;
     position: relative;
     flex-direction: column;
+    border-radius: 50%;
     >img{
         position: absolute;
-        width: 17rem;
-        height: 20rem;
+        width: 14rem;
+        height: 17rem;
         object-fit: cover;
         right: 8rem;
-        top: 2rem;
+        top: .8rem;
         filter: none;
+        border-radius: 10%;
 
     }
 }
 .right-t>:nth-child(1){
     position: absolute;
-    width: 17rem;
-    height: 20rem;
+    width: 14rem;
+    height: 17rem;
     border: 2px solid rgb(20, 97, 211);
     background-color: transparent;
     right: 9rem;
-    top:0.9rem;
+    top:-.8rem;
+    border-radius: 10%;
 }
 .right-t>:nth-child(2){
     position: absolute;
-    width: 17rem;
-    height: 19rem;
+    width: 14rem;
+    height: 16rem;
    background: $planCard;
    right: 7rem;
-    top:4rem;
+    top:2.8rem;
+    border-radius: 10%;
 }
 .arrows{
     display: flex;
     gap:1rem;
     position: absolute;
-    bottom: 1rem;
-    left: 3rem;
+ left: 50%;
+    bottom: -3rem;
+ 
+    
     >img{
         width: 1.5rem;
         cursor: pointer;
+        //-webkit-filter: invert(90%); filter: invert(90%);
     }
 }
 @media screen and (max-width:768px){
@@ -88,32 +131,36 @@
 
     }
   .right-t{
-    min-height: 450px;
+    min-height: 360px;
   }
   .right-t>:nth-child(1){
 position: absolute;
-width: 52%;
-left: 22%;
- right: 26%;
+width: 40%;
+left: 27%;
+ right: 33%;
+ top: 6%;
 
   }
   .right-t>:nth-child(2){
-    width: 52%;
-    left:26%;
-    
- right: 22%;
+    width: 40%;
+    left:33%;
+    top: 10%;
+ right: 27%;
+
 
   }
   .right-t>:nth-child(3){
-    width: 52%;
- left: 24%;
- right: 24%;
+    width: 40%;
+ left: 30%;
+ right: 30%;
+ top: 8%;
 }
 .arrows{
   width: 18%;
   left: 40%;
   right: 40%;
   justify-content:space-around;
+  bottom: 1rem;
 }
 
 .left-t > :nth-child(4) {
@@ -125,29 +172,41 @@ left: 22%;
 }
 
 @media screen and (max-width:560px){
-.left-t>:nth-child(2),.left-t>:nth-child(3){
-    font-size: 2rem;
-}
-.left-t{
-    gap: 1rem;
-}
+    .right-t{
+        min-height: 260px;
+      }
+    .detail {
+        margin-top: 3vw;
+    
+    }
+    .left-t > :nth-child(2) {
+        text-transform: none;
+        text-align: justify;
+        font-size: clamp(0.9rem, 2vw, 1.5rem);
+        margin-top: 2.2vw;
+        font-family: cursive;
+    }
 .right-t>:nth-child(1){
     position: absolute;
-    width: 70%;
-    left: 13%;
-     right: 17%;
+    top: 10%;
+    width: 50%;
+    left: 22%;
+     right: 27%;
+     height: 70%;
       }
       .right-t>:nth-child(2){
-        width: 70%;
-        left:17%;
+        width: 50%;
+        left:27%;
         
-     right: 13%;
+     right: 22%;
+     height: 70%;
     
       }
       .right-t>:nth-child(3){
-        width: 70%;
-     left: 15%;
-     right: 15%;
+        width: 50%;
+     left: 25%;
+     right: 25%;
+     height: 70%;
     }
 }
 
@@ -156,28 +215,26 @@ left: 22%;
     .right-t>:nth-child(1){
         position: absolute;
         
-        height: 80%;
+        height: 100%;
          right: 17%;
           }
           .right-t>:nth-child(2){
         
        
-            
+            height: 95%;
          right: 13%;
-        height: 75%;
+    
           }
           .right-t>:nth-child(3){
           
-            height: 80%;
+            height: 100%;
          right: 15%;
         }
 
-        .left-t{
-gap: 1rem;
-        }
+        
         .arrows{
            
-            bottom: -1rem;
+            bottom: -4rem;
             width: 18%;
             left: 40%;
             right: 40%;

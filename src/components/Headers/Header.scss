@@ -2,10 +2,11 @@
 
   
      
-    .logo{
+    .logo2{
         width:clamp(4rem,9vw,7rem);
      margin-left: 2vw;
         filter: none;
+        cursor: pointer;
     
     }
     .header-menu{
@@ -17,8 +18,11 @@
         gap:2rem;
         
         color:white;
-        >li{
+        >a>li{
             padding: 7px;
+            color: white;
+          
+          
         }
         li:hover{
             cursor: pointer;
@@ -34,7 +38,11 @@
 .header-visible{
 display: flex;
 justify-content: space-between;
+margin-top: 2vw;
+padding: 0 2rem;
+
 }
+
 
 @media screen and (max-width:768px){
     .header{

@@ -1,0 +1,81 @@
+@import '../../global.scss';
+.photo{
+    margin-bottom: 4vw;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    max-height: 500px;
+    border: .5vw solid $orange;
+    box-shadow: 8px 5px 60px -6px rgba(7,87,255,0.75);
+    -webkit-box-shadow: 8px 5px 500px -6px rgba(7,87,255,0.75);
+    -moz-box-shadow: 8px 5px 39px 10px rgba(7,87,255,0.75);
+   
+
+ 
+
+}
+
+
+.carousel .slide {
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.photo{
+    margin-top: 5vw;
+}
+
+.legend {
+    display: none;
+}
+
+.carousel .control-dots {
+    display: none;
+}
+.carousel-status{
+    display: none;
+}
+.control-arrow {
+    width: 10%;
+   background-color: blue;
+}
+.gallery{
+    font-size: clamp(2rem,4vw,3.5rem);
+    color: white;
+    
+}
+.carousel .slide {
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+@media screen and (max-width:768px){
+    .img{
+        width: 80%;
+    }
+    .photo{
+        margin-bottom: 10vw;
+    }
+}
+
+
+
+
+
+

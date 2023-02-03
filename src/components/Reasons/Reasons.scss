@@ -2,8 +2,18 @@
 .Reasons{
     padding:0 2rem;
     display: flex;
-    gap:2rem;
+    gap:3rem;
+    margin-top: 3vw;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
 }
+.right-r span{
+        
+    display: flex;
+    align-items: center;
+    }
 .left-r{
     flex:1 1;
     display: grid;
@@ -76,6 +86,8 @@ div{
     img{
         width:2rem;
         height: 2rem;
+        filter: brightness(150%) saturate(150%);
+        filter: hue-rotate(180deg);
 
     }
   
@@ -94,10 +106,58 @@ div{
     }
 }
 
+
+
+@media screen and (max-width:1100px){
+    .Reasons{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .left-r{
+
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+    .left-r>:nth-child(1){
+        width: 20vw;
+        height: 50vw;
+
+    }
+    .left-r>:nth-child(2){
+        width: 70vw;
+        height: 30vw;
+        
+    }
+    .left-r>:nth-child(3){
+
+        width: 45vw;
+        height: 17.5vw;
+        
+    
+       
+        
+    }
+    .left-r>:nth-child(4){
+      
+        display: none;
+        
+    }
+    .small{
+        font-size: 3rem;
+    }
+    .right-r div{
+        font-size: 1.2rem;
+    }
+   
+}
+
 @media screen and (max-width:768px){
     .Reasons{
         flex-direction: column;
+        width: 100%;
     }
+    
     .left-r{
 
         grid-auto-rows: auto;
@@ -128,10 +188,11 @@ div{
         
     }
     .small{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .right-r div{
-        font-size: 1rem;
+        font-size: .9rem;
     }
+   
    
 }

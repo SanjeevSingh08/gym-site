@@ -2,10 +2,17 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4vw;
+  a{
+    color: white;
+    display: flex;
+    align-items: center;
+  }
 }
 .left-h {
-  padding: 2rem;
-  padding-top: 1.5rem;
+  padding: 0 2rem 2rem 2rem;
+  
+
   flex: 3;
   display: flex;
   gap: 2rem;
@@ -13,7 +20,7 @@
 
   .the-best-ad {
     margin-top: 1.5rem;
-    background-color: #363d42;
+    background-color: #001b2e;
     border-radius: 4rem;
     width: fit-content;
     padding: 20px 13px;
@@ -23,6 +30,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border: white solid 2px;
+    box-shadow: 4px 2.5px 0px;
 
     >div{
         position: absolute;
@@ -113,7 +122,7 @@ width: 64%;
     display: flex;
     flex-direction: column;
     gap:1rem;
-    background-color: $darkGrey;
+    background-color: #031826;
     width: fit-content;
     padding: 1rem;
     align-items: flex-start;
@@ -121,6 +130,8 @@ width: 64%;
     position: absolute;
     right: 4rem;
     top:7rem;
+    border: white solid 2px;
+    box-shadow: 6px 5px 24px;
   >img{
     width:2rem;
   }
@@ -151,13 +162,15 @@ color:$gray;
 .calories{
 display: flex;
 gap:2rem;
-background-color: $caloryCard;
+background-color: #031826;
 border-radius: 5px;
 padding:1rem;
 width:fit-content;
 position: absolute;
 top:32rem;
 right: 28rem;
+border: white solid 2px;
+box-shadow: 3px 4px 5px white;
 
 
 img{
@@ -183,6 +196,12 @@ div{
   height: 30rem;
   left: 0;
 }
+.her-blur{
+  width: 22rem;
+  height: 30rem;
+  right: 0;
+
+}
 .hero-blur-2{
   width: 13rem;
   height: 15rem;
@@ -199,6 +218,8 @@ div{
  
     >img{
       width: 2rem;
+      filter: brightness(150%) saturate(150%);
+    
     }
   }
  
@@ -211,12 +232,13 @@ div{
   .hero-image{
     width: 20rem;
     right: 9rem;
+
   }
   .hero-image-back{
     width: 12rem;
   }
 }
-@media screen and (min-width:768px )  and(max-width:880px){
+@media screen and (min-width:768px )  and(max-width:930px){
   .calories{
     left: -9rem;
     top: 36rem;
@@ -227,6 +249,7 @@ div{
   font-size: 1rem;
 }
 .heart-rate{
+  display:none;
   left: -1rem;
   right: 0;
   top:11rem;
@@ -253,6 +276,7 @@ div{
 @media screen and (max-width:768px){
   .hero{
     flex-direction: column;
+    margin-bottom: 10vw;
 
   }
   .hero-blur{
@@ -261,6 +285,8 @@ div{
   }
   .left-h{
     align-items: center;
+    padding-right: 0;
+    padding-left: 0;
   }
   .the-best-ad{
     margin-top: 0;
@@ -303,7 +329,7 @@ div{
     background: none;
     display: flex;
     flex-direction: column;
-    min-height: 80vw;
+    min-height: 70vw;
  
     
 
@@ -324,7 +350,7 @@ position: relative;
   font-size: 1rem;
 }
 .hero-image{
- width: 45%;
+ width: 40%;
  position: absolute;
  top:34%;
  left: 31%;
@@ -361,6 +387,7 @@ top: 0rem;
 .figures{
   width: 80%;
 }
+
 .span-text{
   width: 80%;
 }
@@ -373,6 +400,8 @@ top: 0rem;
 }
 .heart-rate{
 display: none;
+
+   
  
  
 }
@@ -385,9 +414,12 @@ display: none;
   
   
   }
+  .left-h{
+    gap:1.5rem
+  }
 
 }
-@media screen and (min-width:880px )  and(max-width:1170px){
+@media screen and (min-width:930px )  and(max-width:1170px){
   .calories{
     left: 1rem;
     top: 34rem;

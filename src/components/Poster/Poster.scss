@@ -1,0 +1,44 @@
+
+@import '../../global.scss';
+.aboutus{
+    background-image: linear-gradient(rgba(4, 9, 15, 0.7), rgba(4, 9, 15, 0.7)), url('../../assets/gym-b-2.jpg');
+    height:clamp(14rem,29vw,27rem);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100vw;
+    z-index: -5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.contactus{
+    
+    background-image: linear-gradient(rgba(2, 7, 10, 0.4), rgba(2, 7, 10, 0.4)), url('../../assets/p1.jpg');
+    height:clamp(14rem,29vw,27rem);
+    background-size:cover;
+   
+    background-position: 50% 110vw;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100vw;
+    z-index: -5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;   
+}
+@media screen and (max-width:768px){
+.poster{
+    background-size: 100% 60%;
+    background-position: center bottom;
+}
+}
+@media screen and (min-width:768px)and ( max-width:980px){
+    .poster{
+        background-size: 100% 60%;
+        background-position: center bottom;
+    } 
+}

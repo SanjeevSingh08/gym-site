@@ -1,0 +1,197 @@
+@import "../../global";
+
+  
+     
+    .logo{
+        width:clamp(3.5rem,7vw,5rem);
+     
+        filter: none;
+        cursor: pointer;
+      
+    
+    }
+    .head-menu{
+        font-size: 1.1rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-right: 5vw;
+        gap:1.5rem;
+        
+     
+        
+        color:white;
+        >a>li{
+            padding: 7px;
+          
+        }
+        li:hover{
+            cursor: pointer;
+          color:white;
+          background:linear-gradient(210.41deg, #152330  1.14%, #0c3c4b 100.75%);
+          border-radius:5px;
+          box-shadow: 2px 3px rgb(12, 20, 32);
+
+        }
+    }
+    .head-blur{
+        width: 18rem;
+        height: 20rem;
+        right: 0;
+
+    }
+    .menu{
+        width: 100vw;
+       
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index:500;
+        font-size: 1.1rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 7% ;
+        flex-direction: column;
+        gap:2vw;
+        background: $planCard;
+        font-weight: 500;
+     
+        
+        color:white;
+        >a>li{
+            padding: 10px 90px;
+            font-size: clamp(1.2rem,3vw,7rem);
+          display: block;
+        
+         
+        }
+        li:hover{
+            cursor: pointer;
+          color:white;
+          background:linear-gradient(210.41deg, #092136  1.14%, #093441 100.75%);
+          border-radius:5px;
+          box-shadow: 2px 3px rgb(30, 79, 147);
+
+        }
+    }
+    .hm{
+        display: flex;
+        align-items: center;
+     justify-content: center;
+   position: absolute;
+   top: 0;
+   right: clamp(1.5rem,2vw,4rem);
+     padding-top: 1vw; 
+     z-index: 600;
+     transition-delay: 5s;
+
+    }
+    .hamburger{
+        display: flex;
+        align-items: center;
+     justify-content: center;
+     display: none;
+     padding-top: 1vw;
+    }
+    #overlay-button {
+       
+        padding: 28px 11px;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+        span {
+            height: 4px;
+            width: 35px;
+            border-radius: 2px;
+            background-color: white;
+            position: relative;
+            display: block;
+            transition: all .2s ease-in-out;
+            &:before {
+              top: -10px;
+              visibility: visible;
+            }
+            &:after {
+              top: 10px;
+            }
+            &:before, &:after {
+                height: 4px;
+                width: 35px;
+                border-radius: 2px;
+                background-color: white;
+                position: absolute;
+                content: "";
+                transition: all .2s ease-in-out;
+            }
+          }
+          &:hover span, &:hover span:before, &:hover span:after {
+            background: white;
+          }
+      }
+      
+      input[type=checkbox] {
+        display: none;
+        
+        &:checked ~ #overlay {
+          visibility: visible;
+        }
+        
+        &:checked ~ #overlay-button {
+          &:hover span, span{
+            background: transparent;
+          }
+          span {
+            &:before {
+              transform: rotate(45deg) translate(7px, 7px);
+              opacity: 1;
+            }
+            &:after {
+              transform: rotate(-45deg) translate(7px, -7px);
+            }
+          }
+        }
+      }
+      
+    
+
+.head-visible{
+display: flex;
+justify-content: space-between;
+
+padding: .6rem 2rem .5rem 2rem;
+
+margin-bottom: 5px;
+
+background:rgba(22, 22, 22, 0.25);
+a{
+  color: white;
+  display: flex;
+    align-items: center;
+}
+}
+
+@media screen and (max-width:768px){
+    .head{
+        width: 100%;
+       
+    }
+    .head-menu{
+        display:none;
+    }
+    head-visible {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.2rem 2rem 0.2rem 2rem;
+      margin-bottom: 5px;
+      background: rgba(22, 22, 22, 0.25);
+    }
+}
+@media screen and (max-width:1140px){
+    .hamburger{
+        display: block;
+    }
+    .head-menu{
+       display: none
+    }
+}

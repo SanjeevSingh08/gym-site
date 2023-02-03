@@ -1,8 +1,10 @@
 import React from 'react'
+
 import "./Join.scss";
 const Join = () => {
   return (
     <>
+   
     <div className="Join" id="join">
         <div className="left-j">
             <hr />
